@@ -4,9 +4,9 @@
 #include <cstdlib>
 using namespace std;
 
-int main(int argc, char *argv[]) { 
+int main() { 
 
-    cout << "Hello!"; 
+    std::cout << "Hello!" << std::endl; 
 
     return 0;
 
