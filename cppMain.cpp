@@ -10,21 +10,31 @@ using namespace std;
     //    std::cout << "extra";
     //}
 
-class extra { 
+class extra {  
+
+
     
-public:
+public: 
+
+string value;
  void printExtra() { 
      std::cout << "Hello EXTRA!";
+} 
+
+string print2()  { 
+return value;
 }
+
 };
 
 
 
 int main() { 
     //printExtra(); 
-    extra example;
+    extra example; 
+    example.value = "hi"; 
     example.printExtra();
-    std::cout << "Hello!" << std::endl; 
+    std::cout << "Hello!" << example.value << std::endl; 
 
     return 0;
 
