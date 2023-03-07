@@ -7,7 +7,8 @@ fn main() {
     const NUM_MULT: i64 = 10123;
     let result: i64 = function_pass(NUM_BASE,NUM_MULT); 
     pointer_fn(result);
-    println!("power result = {}",result);
+    println!("power result = {}",result); 
+    mal();
 }
 
 
@@ -31,5 +32,12 @@ let c = a*b;
 fn pointer_fn( a: i64) {  
     let ptr = &a;
 println!("{}", ptr);
+} 
+
+fn mal() { 
+  let mybox = Box::new(5); 
+  let num = *mybox; 
+  println!("{}",num); 
+  println!("{}",mybox);
 }
 
